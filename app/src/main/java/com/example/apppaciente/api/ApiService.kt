@@ -1,6 +1,7 @@
 package com.example.apppaciente.api
 
 import com.example.apppaciente.model.AgregarPacienteResponse
+import com.example.apppaciente.model.BloquearUsuarioResponse
 import com.example.apppaciente.model.CancelarCitaResponse
 import com.example.apppaciente.model.CitasResponse
 import com.example.apppaciente.model.EliminarSeguroDentalResponse
@@ -34,7 +35,11 @@ interface ApiService {
         @Field("clave") clave: String?
     ): Call<LoginResponse>
 
-
+    @FormUrlEncoded
+    @POST("/usuario/bloquear/guzman")
+    fun usuarioBloquear(
+        @Field("email") email: String,
+    ): Call<BloquearUsuarioResponse>
     @GET("/atencion/citas-paciente/{pacienteId}")
     fun getCitasProgramadas(@Path("pacienteId") pacienteId: Int): Call<CitasResponse>
 
