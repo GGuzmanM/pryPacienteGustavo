@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clinicaDark"
+    tools:context=".view.AgregarPacienteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar nuevo Paciente"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/WhiteSmoke" />
+
+        <EditText
+            android:id="@+id/inputNombreUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de Usuario"
+            android:inputType="text"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/WhiteSmoke"
+            android:textColorHint="@color/WhiteSmoke"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:id="@+id/inputContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/WhiteSmoke"
+            android:textColorHint="@color/WhiteSmoke"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:id="@+id/inputNombreCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Cliente"
+            android:inputType="text"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/WhiteSmoke"
+            android:textColorHint="@color/WhiteSmoke"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:id="@+id/inputApellidoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:drawablePadding="8dp"
+            android:hint="Apellido Cliente"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/WhiteSmoke"
+            android:textColorHint="@color/WhiteSmoke" />
+
+        <EditText
+            android:id="@+id/inputCorreoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/WhiteSmoke"
+            android:textColorHint="@color/WhiteSmoke"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:id="@+id/inputDocumentoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Documento"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/WhiteSmoke"
+            android:textColorHint="@color/WhiteSmoke"
+            android:drawablePadding="8dp"/>
+
+        <TextView
+            android:id="@+id/inputFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Fecha de nacimiento"
+            android:padding="8dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/WhiteSmoke"
+            android:textColorHint="@color/WhiteSmoke"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="8dp"
+            android:focusable="true"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/inputDireccionCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:inputType="textPostalAddress"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/WhiteSmoke"
+            android:textColorHint="@color/WhiteSmoke"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:id="@+id/inputTelefonoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/WhiteSmoke"
+            android:textColorHint="@color/WhiteSmoke"
+            android:drawablePadding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo"
+                android:textSize="18sp"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_marginEnd="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupSexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corners2">
+
+                <RadioButton
+                    android:id="@+id/radioMasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioFemenino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:paddingRight="10dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGuardarPaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar Paciente"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/letraDark"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="18dp"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

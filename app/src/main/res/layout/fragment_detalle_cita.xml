@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/clinicaDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corners"
+
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalles de la Cita"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/letraBtnDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado:"
+            android:textStyle="bold"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROGRAMADA"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha:"
+            android:textStyle="bold"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024-06-27"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora:"
+            android:textStyle="bold"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00:00"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motivo de Consulta:"
+            android:textStyle="bold"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvMotivoConsulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="consulta"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Odontólogo:"
+            android:textStyle="bold"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvNombreOdontologo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odontólogo"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnóstico:"
+            android:textStyle="bold"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDiagnostico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnóstico"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anotación:"
+            android:textStyle="bold"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAnotacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anotación"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costo:"
+            android:textStyle="bold"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCosto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costo"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>

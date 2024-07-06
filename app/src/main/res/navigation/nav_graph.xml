@@ -1,0 +1,172 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.apppaciente.view.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_citasProgramadasFragment"
+            app:destination="@id/citasProgramadasFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_pagoPendientesFragment"
+            app:destination="@id/pagoPendientesFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_verHistorialFragment"
+            app:destination="@id/verHistorialFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_agregarCitaFragment"
+            app:destination="@id/agregarCitaFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_segurosDentalesFragment"
+            app:destination="@id/segurosDentalesFragment" />
+
+        <action
+            android:id="@+id/action_nav_home_to_notificacionesFragment"
+            app:destination="@id/notificacionesFragment" />
+
+        <action
+            android:id="@+id/action_nav_home_to_pagoPendientesFragment2"
+            app:destination="@id/pagoPendientesFragment2" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/citasProgramadasFragment"
+        android:name="com.example.apppaciente.view.CitasProgramadasFragment"
+        android:label="Citas programadas"
+        tools:layout="@layout/fragment_citas_programadas" >
+        <action
+            android:id="@+id/action_citasProgramadasFragment_to_agregarCitaFragment"
+            app:destination="@id/agregarCitaFragment" />
+        <action
+            android:id="@+id/action_citasProgramadasFragment_to_detalleCitaFragment"
+            app:destination="@id/detalleCitaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarCitaFragment"
+        android:name="com.example.apppaciente.view.AgregarCitaFragment"
+        android:label="Cita"
+        tools:layout="@layout/fragment_agregar_cita" >
+        <action
+            android:id="@+id/action_agregarCitaFragment_to_citasProgramadasFragment2"
+            app:destination="@id/citasProgramadasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleCitaFragment"
+        android:name="com.example.apppaciente.view.DetalleCitaFragment"
+        android:label="Detalle de la Cita"
+        tools:layout="@layout/fragment_detalle_cita">
+        <argument
+            android:name="estado"
+            app:argType="string" />
+        <argument
+            android:name="fecha"
+            app:argType="string" />
+        <argument
+            android:name="hora"
+            app:argType="string" />
+        <argument
+            android:name="motivoConsulta"
+            app:argType="string" />
+        <argument
+            android:name="nombreOdontologo"
+            app:argType="string" />
+        <argument
+            android:name="diagnostico"
+            app:argType="string" />
+        <argument
+            android:name="anotacion"
+            app:argType="string" />
+        <argument
+            android:name="costo"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagoPendientesFragment"
+        android:name="com.example.apppaciente.view.PagosPendientesFragment"
+        android:label="Pagos"
+        tools:layout="@layout/fragment_pagos_pendientes" >
+
+        <action
+            android:id="@+id/action_pagoPendientesFragment_to_pagoServiciosFragment"
+            app:destination="@id/pagoServiciosFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pagoPendientesFragment2"
+        android:name="com.example.apppaciente.view.PagosPendientes2Fragment"
+        android:label="Pagos"
+        tools:layout="@layout/fragment_pagos_pendientes2" >
+
+        <action
+            android:id="@+id/action_pagoPendientesFragment_to_pagoServiciosFragment"
+            app:destination="@id/pagoServiciosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/datosPagoFragment"
+        android:name="com.example.apppaciente.view.DatosPagoFragment"
+        android:label="Datos de pago"
+        tools:layout="@layout/fragment_datos_pago" >
+        <argument
+            android:name="montoTotal"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/verHistorialFragment"
+        android:name="com.example.apppaciente.view.VerHistorialFragment"
+        android:label="fragment_ver_historial"
+        tools:layout="@layout/fragment_ver_historial">
+        <action
+            android:id="@+id/action_verHistorialFragment_to_detalleCitaFragment"
+            app:destination="@id/detalleCitaFragment" />
+        </fragment>
+
+    <fragment
+        android:id="@+id/pagoServiciosFragment"
+        android:name="com.example.apppaciente.view.PagoServiciosFragment"
+        android:label="Pago de servicios"
+        tools:layout="@layout/fragment_pago_servicios" >
+        <argument
+            android:name="citaId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_pagoServiciosFragment_to_pagoPendientesFragment"
+            app:destination="@id/pagoPendientesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segurosDentalesFragment"
+        android:name="com.example.apppaciente.view.SegurosDentalesFragment"
+        android:label="Seguros dentales"
+        tools:layout="@layout/fragment_seguros_dentales" >
+        <action
+            android:id="@+id/action_segurosDentalesFragment_to_agregarSeguroDentalFragment"
+            app:destination="@id/agregarSeguroDentalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarSeguroDentalFragment"
+        android:name="com.example.apppaciente.view.AgregarSeguroDentalFragment"
+        android:label="Agregar seguro dental"
+        tools:layout="@layout/fragment_agregar_seguro_dental" >
+        <action
+            android:id="@+id/action_agregarSeguroDentalFragment_to_segurosDentalesFragment"
+            app:destination="@id/segurosDentalesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarSeguroDentalFragment"
+        android:name="com.example.apppaciente.editarSeguroDentalFragment"
+        android:label="fragment_editar_seguro_dental"
+        tools:layout="@layout/fragment_editar_seguro_dental" />
+
+    <fragment
+        android:id="@+id/notificacionesFragment"
+        android:name="com.example.apppaciente.view.NotificacionFragment"
+        android:label="Notificaciones"
+        tools:layout="@layout/fragment_notificacion" />
+
+</navigation>

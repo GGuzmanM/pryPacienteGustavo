@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/clinicaDark"
+    tools:context=".view.AgregarSeguroDentalFragment">
+
+
+    <EditText
+        android:id="@+id/inputNombreCompania"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Nombre de la Compañía"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/WhiteSmoke"
+        android:textColorHint="@color/WhiteSmoke"
+        android:drawablePadding="8dp" />
+
+
+    <EditText
+        android:id="@+id/inputTelefonoCompania"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Teléfono de la Compañía"
+        android:inputType="phone"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/WhiteSmoke"
+        android:textColorHint="@color/WhiteSmoke"
+        android:drawablePadding="8dp" />
+
+    <EditText
+        android:id="@+id/inputTipoCobertura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:hint="Tipo de cobertura"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/WhiteSmoke"
+        android:textColorHint="@color/WhiteSmoke" />
+
+    <Button
+        android:id="@+id/btnGuardarSeguroDental"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Seguro"
+        android:backgroundTint="@color/letraDark"
+        android:textColor="@color/letraBtnDark"
+        android:textSize="18dp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

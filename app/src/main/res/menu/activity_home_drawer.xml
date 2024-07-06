@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:iconTint="?attr/menuItemColor"
+            android:titleTextColor="?attr/menuItemColor"/>
+        <item
+            android:id="@+id/nav_cita"
+            android:title="Cita"
+            android:iconTint="?attr/menuItemColor"
+            android:titleTextColor="?attr/menuItemColor"/>
+        <item
+            android:id="@+id/nav_pagos"
+            android:title="Pagos"
+            android:iconTint="?attr/menuItemColor"
+            android:titleTextColor="?attr/menuItemColor"/>
+    </group>
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:showAsAction="never"
+        android:iconTint="?attr/menuItemColor"
+        android:titleTextColor="?attr/menuItemColor"/>
+</menu>

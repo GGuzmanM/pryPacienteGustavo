@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_reprogramar"
+        android:title="Reprogramar cita" />
+    <item
+        android:id="@+id/action_cancelar"
+        android:title="Cancelar cita" />
+</menu>

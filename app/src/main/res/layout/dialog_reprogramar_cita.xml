@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/clinicaDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reprogramar cita"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/WhiteSmoke" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha registrada"
+        android:textStyle="bold"
+        android:textColor="@color/WhiteSmoke"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvFechaRegistrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/WhiteSmoke"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora registrada"
+        android:textStyle="bold"
+        android:textColor="@color/WhiteSmoke"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvHoraRegistrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/WhiteSmoke"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva fecha"
+        android:textStyle="bold"
+        android:textColor="@color/WhiteSmoke"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/etNuevaFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Seleccionar fecha"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/WhiteSmoke"
+        android:textColorHint="@color/WhiteSmoke"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawablePadding="8dp"
+        android:focusable="true"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva hora"
+        android:textStyle="bold"
+        android:textColor="@color/WhiteSmoke"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/etNuevaHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Seleccionar hora"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/WhiteSmoke"
+        android:textColorHint="@color/WhiteSmoke"
+        android:drawableStart="@drawable/ic_clock"
+        android:drawablePadding="8dp"
+        android:focusable="true"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/btnReprogramar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reprogramar cita"
+        android:backgroundTint="@color/letraDark"
+        android:textColor="@color/letraBtnDark"
+        android:textSize="18dp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

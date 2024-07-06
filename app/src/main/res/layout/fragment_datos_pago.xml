@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clinicaDark"
+    android:padding="16dp"
+    tools:context=".view.DatosPagoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monto total"
+            android:textStyle="bold"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/."
+                android:textColor="@color/letraDark"
+                android:layout_marginEnd="3dp"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/etMontoTotalDatoPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:text="0.00"
+                android:textSize="30dp"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/letraDark" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de tarjeta"
+            android:textStyle="bold"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etNumeroTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="1234 1234 0000 0000"
+            android:maxLength="16"
+            android:background="@drawable/edittext_background_claro"
+            android:padding="8dp"
+            android:textColor="@color/letraBtnDark"
+            android:textColorHint="@color/letraBtnDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Válido hasta"
+                    android:textStyle="bold"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/etValidoHasta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="04/27"
+                    android:background="@drawable/edittext_background_claro"
+                    android:padding="8dp"
+                    android:textColor="@color/letraBtnDark"
+                    android:textColorHint="@color/letraBtnDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CVV"
+                    android:textStyle="bold"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/etCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="123"
+                    android:maxLength="3"
+                    android:background="@drawable/edittext_background_claro"
+                    android:padding="8dp"
+                    android:textColor="@color/letraBtnDark"
+                    android:textColorHint="@color/letraBtnDark" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titular de la tarjeta"
+            android:textStyle="bold"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etTitularTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/edittext_background_claro"
+            android:padding="8dp"
+            android:textColor="@color/letraBtnDark"
+            android:textColorHint="@color/letraBtnDark" />
+
+        <Button
+            android:id="@+id/btnConfirmarPago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar pago"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/letraDark"
+            android:textColor="@color/letraBtnDark"
+            android:textSize="18sp"
+            android:padding="16dp" />
+    </LinearLayout>
+</ScrollView>

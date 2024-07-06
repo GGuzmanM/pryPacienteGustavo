@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/clinicaDark"
+    tools:context=".view.AgregarCitaFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar nueva cita"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/WhiteSmoke" />
+
+    <TextView
+        android:id="@+id/inputFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Fecha"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/WhiteSmoke"
+        android:textColorHint="@color/WhiteSmoke"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawablePadding="8dp"
+        android:focusable="true"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/inputHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Hora"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/WhiteSmoke"
+        android:textColorHint="@color/WhiteSmoke"
+        android:drawableStart="@drawable/ic_clock"
+        android:drawablePadding="8dp"
+        android:focusable="true"
+        android:clickable="true" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/WhiteSmoke"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Selecciona odontólogo">
+
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/inputOdontologo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:padding="8dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/WhiteSmoke"
+            android:textColorHint="@color/WhiteSmoke"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="8dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:focusableInTouchMode="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/inputMotivoConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Motivo de Consulta"
+        android:inputType="text"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/WhiteSmoke"
+        android:textColorHint="@color/WhiteSmoke"
+        android:drawablePadding="8dp" />
+
+    <Button
+        android:id="@+id/btnGuardarCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar cita"
+        android:backgroundTint="@color/letraDark"
+        android:textColor="@color/letraBtnDark"
+        android:textSize="18dp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
